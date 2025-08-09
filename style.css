@@ -1,0 +1,113 @@
+/* global variables */
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: Inter ;
+    background-color: var(--Grey-900);
+    display: grid;
+    place-items: center;
+}
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: var(--Grey-800);
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--Green);
+}
+h1 {
+    color: var(--White);
+}
+address {
+    color: var(--Green);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.bio {
+    color: var(--White);
+    font-family: sans-serif;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+.social-btn {
+    background-color: var(--Grey-700);
+    padding: 10px;
+    border-radius: 10px;
+    border-color: var(--Grey-700) ;
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    color: var(--White);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.social-btn:focus {
+    outline: 2px solid var(--Green);
+    outline-offset: 4px;
+}
+.social-btn:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+    transition: background-color 0.3s, color 0.3s;
+}
+.developer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px   ;
+}
+.social-links {
+    margin-top: 20px;
+}
+.attribution {
+    font-size: 11px;
+    color: var(--White);
+}
+.attribution a {
+    color: var(--White);
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 70%;
+  }
+
+  .social-btn {
+    width: 100%;
+  }
+
+  p{
+    text-align: center;
+  }
+}
